@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@theme {
+  /* houdiny.ai light theme */
+  --color-brand-bg: #ffffff;
+  --color-brand-surface: #f8faff;
+  --color-brand-surface-elevated: #ffffff;
+  --color-brand-border: #e5e9ef;
+  --color-brand-text: #1b1f3c;
+  --color-brand-text-secondary: #47525d;
+  --color-brand-text-muted: #b2b2b2;
+  --color-brand-primary: #237ff3;
+  --color-brand-primary-light: #2783ec;
+  --color-brand-accent: #1a6dd4;
+  --color-brand-glow: rgba(35, 127, 243, 0.15);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1b1f3c;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter, Inter, system-ui, -apple-system, sans-serif);
+  font-feature-settings:
+    'rlig' 1,
+    'calt' 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:focus-visible {
+  outline: 2px solid #237ff3;
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
